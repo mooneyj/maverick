@@ -125,7 +125,7 @@ class maverick_hardware::raspberry (
                 unless      => "/bin/grep 'done' /etc/raspi-expandroot",
                 require	    => Package["raspi-config"],
             }
-            warning("Root filesystem/partition needs expanding, *please reboot* when configure is finished.")
+            warning("Root filesystem/partition needs expanding, *please stop , expandrootfs and reboot*.")
         }
     }
         
